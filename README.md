@@ -17,7 +17,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About
 
-This application is designed to determine the user's psycho-emotional state by text messages exchanged between people in the Avatar ecosystem. Psycho-emotional state data from the Avatar ecosystem is used to personalize artificial lighting when multiple users use lamps at the same time.
+This application is designed to determine the user's psycho-emotional state by text messages exchanged between people in the Avatar ecosystem. Psycho-emotional state data from the Avatar ecosystem is used to personalize artificial lighting when multiple users use lamps at the same time. This software is part of the avatar ecosystem.
 
 
 ### Documentation
