@@ -52,16 +52,6 @@ async def message_get_psycho_metrics(message: MessageBase, emotion_list: Emotion
     return message_with_emotions
 
 
-async def calculate_coef(message_with_emotions: MessageWithEmotions):
-    # TODO пересчет выбора эмоций и токсичности, с учетом эмоций по предложениям
-    pass
-
-
-async def get_advice():
-    # TODO получить совет по коммуникации
-    pass
-
-
 async def sents_get_psycho_metrics(sents: List[str]) -> tuple:
     """Получить эмоцию, токсичность и наличие мата для каждого предложения сообщения
 
