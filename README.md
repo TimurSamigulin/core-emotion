@@ -1,48 +1,29 @@
-# Руководство по установке 
+<div id="top"></div>
 
-Клонировать репозиторий 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/TimurSamigulin/core-emotion">
+    <img src="docs/image/reaction.png" alt="Logo" width="125" height="125">
+  </a>
 
-    git@github.com:TimurSamigulin/core-emotion.git
+<h3 align="center">CoreEmotion</h3>
+
+  <p align="center">
+    Software module for determining the psycho-emotional state of users by text messages in the Avatar ecosystem
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## About
+
+This application is designed to determine the user's psycho-emotional state by text messages exchanged between people in the Avatar ecosystem. Psycho-emotional state data from the Avatar ecosystem is used to personalize artificial lighting when multiple users use lamps at the same time.
 
 
-Скачать модель для детекции эмоций по [ссылке](https://drive.google.com/drive/folders/11DcQ9zA4S78VkNVfnheHlF4_6i8iJ0Nd?usp=sharing) и добавить в папку app/models/emotion-detection
+### Documentation
+The application documentation is available in the [GitHub wiki](https://github.com/TimurSamigulin/core-emotion/wiki) of this repository. There you can find instructions for installing the application from the source codes, using and configuring the use, as well as all technical information about the project.
 
-# Руководство по использованию
 
-Для запуска этих сервисов необходимо:
-
-установить в систему иметь Docker и утилиту Docker-Compose.
-
-выполнить в терминале команду
-
-    docker-compose up -d
-
-В случае возникновения неполадок с Docker-Compose, установленной через пакетный менеджер системы, можно установить docker-compose в виртуальное окружение Python:
-
-    pip install docker-compose
-
-Для того, чтобы запустить модуль локально, необходимо:
-
-Если модуль был склонирован из репозитория - необходимо создать виртуальное окружение
-
-    python3.9 -m venv .venv
-
-и установить зависимости (команда для установки будет добавлена позже)
-
-Активировать виртуальное окружение Python
-
-    source .venv/bin/activate
-
-Запустить модуль
-
-    python -m app
-
-Если будут ошибки с запуском Redis, mongodb и т.д., нужно проверить наличие .env файла и при его отсутствии выполнить
-
-    sudo cp .env.example .env
-
-Если нужно установить зависимости для существующего модуля (микросервиса), то нужно воспользоваться командой
-
-    pip install -r requirements.txt --extra-index-url http://pypi:zURsnxpa7uge5w4F@5.53.125.17:8080 --trusted-host 5.53.125.17
-
-Это вызвано тем, что некоторые определенные версии библиотек лежат на локальных серверах ИТМО
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+The application was developed within the framework of the research project "Development of mechanisms for designing the processes of users' vital activity into the ecosystem of their digital assistants" No. 621308
